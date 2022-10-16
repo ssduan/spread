@@ -1,0 +1,60 @@
+:root {
+    --body-copy: 14px;
+    --page-spacing: 20px;
+    --page-margin: 10px;
+    --main-heading: calc(var(--body-copy) * 1)
+    
+}
+
+@media (min-width: 768px) {
+    :root {
+        --body-copy: 16px;
+        --page-spacing: 30px;
+        margin-bottom: 20;
+        --main-heading: calc(var(--body-copy) * 1)
+
+    }
+
+    .quote {
+        padding-top: 120px ; 
+        padding-bottom: 120px; 
+    }
+}
+
+
+body {
+    font-family: sans-serif;
+    font-size: var(--body-copy);
+}
+
+body > * {
+    padding: var(--page-spacing);
+}
+
+h1 {
+font-size: var(--main-heading);
+padding-top: 10px;
+padding-bottom: 10px;
+
+
+
+}
+
+header, footer {
+
+}
+
+
+
+.footnotes {
+    border: 1px;
+    display: grid;
+    grid-template-columns:5% 90%;
+    text-align: left;
+    
+}
+.head {
+    display: grid;
+    background-color:plum ;
+}
+
