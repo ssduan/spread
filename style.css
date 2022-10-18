@@ -3,23 +3,18 @@
     --page-spacing: 20px;
     --page-margin: 10px;
     --main-heading: calc(var(--body-copy) * 1)
-    
 }
 
 @media (min-width: 860px) {
     :root {
         --body-copy: 16px;
         --page-spacing: 20px;
-
         margin-bottom: 20px;
         min-width: 860px;
         max-width:1000px;
         margin: auto;
         --main-heading: calc(var(--body-copy) * 1)
-
     }
-
-
 }
 
 
@@ -58,3 +53,31 @@ padding-bottom: 10px;
     background-color:#E6E6F8 ;
 }
 
+.head {
+    text-align: center;
+}
+.flex-container {
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+padding-bottom: 30px;
+padding-top: 50px;
+}
+
+.box1 {
+ padding: 10px;
+flex: 50
+}
+
+.box2 {
+ padding: 10px;
+ flex: 50
+}
+
+.box3 {
+padding: 10px;
+flex: 50
+}
+
+@media (max-width: 414px) {
+    .box1, .box2, .box3 { flex: 100%;}
