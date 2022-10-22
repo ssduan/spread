@@ -1,5 +1,5 @@
 :root {
-    --body-copy: 12px;
+    --body-copy: 13px;
     --page-spacing: 20px;
     --page-margin: 0px;
     --main-heading: calc(var(--body-copy) * 1)
@@ -7,14 +7,13 @@
 }
 
 
-
-@media (min-width: 800px) {
+@media (min-width: 825px) {
     :root {
         --body-copy: 19px;
         --page-spacing: 20px;
         line-height: 1.8;
         margin-bottom: 20px;
-        max-width:800px;
+        max-width:825px;
         margin: auto;
         --main-heading: calc(var(--body-copy) * 1)
     }
@@ -25,6 +24,8 @@
     padding-top: 40px ; 
     padding-bottom: 40px; 
     color: #EE82EE;
+    border-bottom:   1px solid black;
+
 }
 
 body {
@@ -32,6 +33,9 @@ body {
     font-size: var(--body-copy);
     letter-spacing: .1rem;
     background-color: #F5F5F5	;
+    border: 1px solid black;
+    border-top: 0px;
+
 }
 
 body > * {
@@ -50,11 +54,19 @@ padding-bottom: 10px;
     display: grid;
     grid-template-columns:5% 90%;
     text-align: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    margin-top: 80px;
+    margin-bottom: 0px;
+
     
 }
 .head {
     background-color:#EE82EE ;
     text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 
@@ -64,7 +76,10 @@ flex-wrap: wrap;
 text-align: center;
 padding-bottom: 40px;
 padding-top: 40px;
+border-bottom: 1px solid black;
+margin-bottom:20px;
 }
+
 
 .box1 {
  padding: 10px;
@@ -85,3 +100,11 @@ flex: 50
     .box1, .box2, .box3 { flex: 100%;}  
 }
 
+a:link {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#706070;
+  }
