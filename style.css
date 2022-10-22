@@ -1,5 +1,6 @@
 :root {
-    --body-copy: 13px;
+    --body-copy: 16px;
+    line-height: 1.6;
     --page-spacing: 20px;
     --page-margin: 0px;
     --main-heading: calc(var(--body-copy) * 1)
