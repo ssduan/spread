@@ -148,24 +148,29 @@ a:hover {
 
 mark {
     background-color: #ffd8ff;
-
 }
 
 
+@media print {
+  :root {
+      --body-copy: 16px;
+      line-height: 1.6;
+      --main-heading: calc(var(--body-copy) * 2)
+  }
+  body {
+      background-color: white;
+      border:0;
+  }
+  .head {
+      border-top:0px;
+      border-bottom:0px;
+      color:  #EE82EE;
+  }
+  .top {
+      display: none;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
